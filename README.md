@@ -18,12 +18,12 @@ Gathered data surrounding ~7 million EMS calls form 2013-2017 from NYC Open Data
     
 #### Predicting Weekly Call Volume 
 
-![](https://github.com/kahartman2/beautiful_coffee/blob/master/weekly_call_volume.png)
+![](https://github.com/kahartman2/nyc_911_calls/blob/master/weekly_call_volume.png)
 
-![](https://github.com/kahartman2/beautiful_coffee/blob/master/weekly_call_volume_facebook.png)
+![](https://github.com/kahartman2/nyc_911_calls/blob/master/weekly_call_volume_facebook.png)
 
 #### Predicting Weekly Average Response Time 
 
-![](https://github.com/kahartman2/beautiful_coffee/blob/master/weekly_average_time.png)
+![](https://github.com/kahartman2/nyc_911_calls/blob/master/weekly_average_time.png)
 
-![](https://github.com/kahartman2/beautiful_coffee/blob/master/weekly_average_time_facebook.png)
+![](https://github.com/kahartman2/nyc_911_calls/blob/master/weekly_average_time_facebook.png)
