@@ -12,13 +12,21 @@ NYC open data has a [repository with roughly 7 million EMS calls from 2013-2017.
 
 ### Approach 
 Our steps were as follows:
+
     -Integrate EMS call data with daily weather data and holiday data 
+
     -Resample data to weekly sums and averages
+
     -Account for AR, MA, difference, and seasonal terms
+
     -Train SARIMAX model on first 80% of data
+
     -Predict weekly response times and call volume for remaining 20%
+
     -Measure RMSE and compare with dummy baseline model
+
     -Adjust SARIMAX terms and repeat
+    
     -Compare our custom model with facebook's "prophet" forecaster
     
 ### Predicting Weekly Call Volume 
