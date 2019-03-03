@@ -27,17 +27,18 @@ Our steps were as follows:
 
 * Resample the (occurrence-based) data to (temporally evenly spaced-out) sums and averages
 
-![](media/callvol_decomp.png "EMS Call Categories")
+![](media/callvol_decomp.png "Call Volume Decomposition")
 
 * Account for AR, MA, difference, and seasonal terms
 
-![](media/acf_pacf_plots_times.png "EMS Call Categories")
+![](media/acf_pacf_plots_times.png "ACF and PACF Plots for Response Times")
 
 * Train SARIMAX models on the first 80% of the data
 
 * Predict weekly response times and call volume for the remaining 20%
 
-![](media/manhattan_forecasts.png "EMS Call Categories")
+![](media/manhattan_forecasts.png "Manhattan Call Volume Forecast")
+^ Those were our scores for only Manhattan.
 
 * Measure RMSE and compare with cost from dummy baseline model
 
@@ -45,3 +46,4 @@ Our steps were as follows:
 
 * Compare our custom model's cost with facebook "prophet" forecaster's
     
+![](media/prophet_times_forecast.png "Facebook Prophet Forecast")
