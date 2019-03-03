@@ -10,6 +10,10 @@ A time series analysis of medical emergency Call Volumes and Response Times in t
 
 NYC open data has a [repository with roughly 7 million EMS calls from 2013-2017.](https://data.cityofnewyork.us/Public-Safety/EMS-Incident-Dispatch-Data/76xm-jjuj) We dropped a good number of columns just for computational maneuverability but we did go ahead and use all rows.
 
+
+Here's what people are calling the ambulance about:
+![](media/calltype_pie.png "EMS Call Categories")
+
 ### The Question
 
 How well can we forecast the **total number (or "volume") of EMS calls** in future weeks? 
