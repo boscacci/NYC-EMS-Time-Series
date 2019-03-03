@@ -11,31 +11,37 @@ A time series analysis of medical emergency Call Volumes and Response Times in t
 NYC open data has a [repository with roughly 7 million EMS calls from 2013-2017.](https://data.cityofnewyork.us/Public-Safety/EMS-Incident-Dispatch-Data/76xm-jjuj) We dropped a good number of columns just for computational maneuverability but we did go ahead and use all rows.
 
 
-Here's what people are calling the ambulance about:
+Here's what people are calling the ambulance about, mostly:
 ![](media/calltype_pie.png "EMS Call Categories")
 
 ### The Question
 
-How well can we forecast the **total number (or "volume") of EMS calls** in future weeks? 
+How well can we forecast the **total numbers (or "volumes") of EMS calls** in future weeks? 
 
-How well can we forecast the **average ambulance response time** in future weeks?
+How well can we forecast the **average ambulance response times** in future weeks?
 
 ### Approach 
 Our steps were as follows:
 
-    -Integrate EMS call data with daily weather data and holiday data 
+* Integrate EMS call data with daily weather data and holiday data 
 
-    -Resample the (occurrence-based) data to (temporally evenly spaced-out) sums and averages
+* Resample the (occurrence-based) data to (temporally evenly spaced-out) sums and averages
 
-    -Account for AR, MA, difference, and seasonal terms
+![](media/callvol_decomp.png "EMS Call Categories")
 
-    -Train SARIMAX models on the first 80% of the data
+* Account for AR, MA, difference, and seasonal terms
 
-    -Predict weekly response times and call volume for the remaining 20%
+![](media/acf_pacf_plots_times.png "EMS Call Categories")
 
-    -Measure RMSE and compare with cost from dummy baseline model
+* Train SARIMAX models on the first 80% of the data
 
-    -Adjust SARIMAX terms and repeat
+* Predict weekly response times and call volume for the remaining 20%
 
-    -Compare our custom model's cost with facebook "prophet" forecaster's
+![](media/manhattan_forecasts.png "EMS Call Categories")
+
+* Measure RMSE and compare with cost from dummy baseline model
+
+* Adjust SARIMAX terms and repeat
+
+* Compare our custom model's cost with facebook "prophet" forecaster's
     
