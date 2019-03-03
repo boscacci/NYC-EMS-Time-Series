@@ -47,3 +47,4 @@ Our steps were as follows:
 * Compare our custom model's cost with facebook "prophet" forecaster's
     
 ![](media/prophet_times_forecast.png "Facebook Prophet Forecast")
+^ That's a facebook prophet-generated forecast of average EMS response times.
