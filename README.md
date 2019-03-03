@@ -2,7 +2,7 @@
 
 A time series analysis of medical emergency Call Volumes and Response Times in the five boroughs.
 
-![](response_times_forecast.png "Predicted vs Actual EMS Response Times")
+![](media/response_times_forecast.png "Predicted vs Actual EMS Response Times")
 
 [Kayla Hartman](https://github.com/kahartman2/) and I were curious about **Time Series** analysis and modeling: Using temporal lags of a dependent variable as predictors of that same variable, in tandem with **other exogenous variables**, to infer values into the future, and validating those predictions.
 
